@@ -22,3 +22,16 @@ app.ts is main entry point
 ## Running server
 ­`deno run --allow-net server.ts`
 
+# Heroku deployment
+
+Buildpack to be set
+`https://github.com/chibat/heroku-buildpack-deno.git`
+
+hisProcfile to be added
+
+Add remote to heroku
+`heroku git:remote -a infinite-fjord-96060`
+
+push to heroku repo
+`git push heroku`
+
