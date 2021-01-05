@@ -36,21 +36,20 @@ function convertToEntry(list: any): Entry[] {
 }
 
 function groupBy(
-    list: Entry[],
-    keyGetter: (arg0: any) => any,
-  ): Map<string, Entry[]> {
-    const map = new Map();
-    list.forEach((item) => {
-      const key = keyGetter(item);
-      const collection = map.get(key);
-      if (!collection) {
-        map.set(key, [item]);
-      } else {
-        collection.push(item);
-      }
-    });
-    return map;
-  }
-
+  list: Entry[],
+  keyGetter: (arg0: any) => any,
+): Map<string, Entry[]> {
+  const map = new Map();
+  list.forEach((item) => {
+    const key = keyGetter(item);
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, [item]);
+    } else {
+      collection.push(item);
+    }
+  });
+  return map;
+}
 
 export { convertToEntry, groupBy };
