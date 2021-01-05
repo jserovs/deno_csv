@@ -34,7 +34,7 @@ for await (const req of s) {
         separator: ";",
       });
       
-      const grouped = groupBy(convertToEntry(content), (item) => item.name);
+      const grouped = await groupBy(convertToEntry(content), (item) => item.name);
       const result = await getBillableHours(grouped);
 
       req.respond({
