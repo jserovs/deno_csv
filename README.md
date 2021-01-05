@@ -17,6 +17,8 @@ Manually add the directory to your $HOME/.bash_profile (or similar)
 app.ts is main entry point
 
 ## Running app
-
 `deno run --allow-read app.ts`
+
+## Running server
+­`deno run --allow-net server.ts`
 
