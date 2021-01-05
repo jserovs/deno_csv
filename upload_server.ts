@@ -1,16 +1,21 @@
 import { serve } from "https://deno.land/std/http/server.ts";
+
+import { parse } from "https://deno.land/std/flags/mod.ts";
 import {
   FormFile,
   multiParser,
 } from "https://deno.land/x/multiparser@v2.0.3/mod.ts";
 import { BufReader } from "https://deno.land/std@0.82.0/io/bufio.ts";
 
-import {} from "./app.ts";
+import { parseCsv } from "./deps.ts";
+import { convertToEntry, getBillableHours, groupBy } from "./services/EntryServices.ts";
 
-import { parseCsv, parseDate } from "./deps.ts";
+const { args } = Deno;
+const DEFAULT_PORT = 8000;
+const argPort = parse(args).port;
 
-const s = serve({ port: 8070 });
-console.log(`🦕 Deno server running at http://localhost:8070/ 🦕`);
+const s = serve({ port: argPort ? Number(argPort) : DEFAULT_PORT });
+console.log(`🦕 Deno server running 🦕`);
 
 type Reader = Deno.Reader;
 
@@ -18,24 +23,24 @@ for await (const req of s) {
   if (req.url === "/upload") {
     const form = await multiParser(req);
     if (form) {
-      console.log(form);
+      console.log("single");
+      // getting file contents from upload
+      const f = <FormFile> form.files["csv"];
+      // creating reader from file content buffer
+      const reader = new Deno.Buffer(f.content.buffer as ArrayBuffer);
+      // parsing from created buffer
+      const content = await parseCsv(BufReader.create(reader), {
+        skipFirstRow: true,
+        separator: ";",
+      });
+      
+      const grouped = groupBy(convertToEntry(content), (item) => item.name);
+      const result = await getBillableHours(grouped);
 
-      if (form.files["csv"] instanceof Array) {
-        console.log("array");
-      } // if file exists, convert it to array
-      else if (form.files["csv"]) {
-        console.log("single");
-        // getting file contents from upload
-        const f = <FormFile> form.files["csv"];
-        // creating reader from file content buffer
-        const reader = new Deno.Buffer(f.content.buffer as ArrayBuffer);
-        // parsing from created buffer
-        const content = await parseCsv(BufReader.create(reader), {
-          skipFirstRow: true,
-          separator: ";",
-        });
-        console.log(content);
-      }
+      req.respond({
+        headers: new Headers({"Content-Type": "application/json; charset=utf-8"}),
+        body: JSON.stringify(result)
+      })
     }
   }
 

@@ -1,5 +1,7 @@
 import { parseDate } from "../deps.ts";
 import { Entry } from "../classes/Entry.ts";
+import { BreakUp } from "../classes/BreakUp.ts";
+import { nonBillablePhaseArray } from "../data/AdditionalData.ts";
 
 function convertToEntry(list: any): Entry[] {
   var entryList: Entry[] = [];
@@ -52,4 +54,25 @@ function groupBy(
   return map;
 }
 
-export { convertToEntry, groupBy };
+function getBillableHours(map: Map<string, Entry[]>): BreakUp[] {
+  var summary: BreakUp[] = [];
+  for (const key of map.keys()) {
+    let billableSum = 0;
+    let totalHours = 0;
+
+    map.get(key)?.forEach((element) => {
+      totalHours += element.hours;
+      if (!nonBillablePhaseArray.includes(element.phase)) {
+        billableSum += element.hours;
+      }
+    });
+
+    const item = new BreakUp(key, totalHours, billableSum);
+
+    item.printInfo();
+    summary.push(item);
+  }
+  return summary;
+}
+
+export { convertToEntry, groupBy, getBillableHours };
