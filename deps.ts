@@ -1,5 +1,8 @@
 import {
     parse as parseCsv    
-} from 'https://deno.land/std@0.83.0/encoding/csv.ts'
+} from 'https://deno.land/std@0.82.0/encoding/csv.ts'
 
-export {parseCsv}
+import {
+    parse as parseDate
+} from 'https://deno.land/std@0.77.0/datetime/mod.ts';
+export {parseCsv, parseDate}
