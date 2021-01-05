@@ -11,15 +11,15 @@ import { parseCsv } from "./deps.ts";
 import { convertToEntry, getBillableHours, groupBy } from "./services/EntryServices.ts";
 
 const { args } = Deno;
-const DEFAULT_PORT = 8000;
+const DEFAULT_PORT = 8083;
 const argPort = parse(args).port;
 
-const s = serve({ port: argPort ? Number(argPort) : DEFAULT_PORT });
+const server = serve({ port: argPort ? Number(argPort) : DEFAULT_PORT });
 console.log(`🦕 Deno server running 🦕`);
 
 type Reader = Deno.Reader;
 
-for await (const req of s) {
+for await (const req of server) {
   if (req.url === "/upload") {
     const form = await multiParser(req);
     if (form) {
@@ -34,10 +34,11 @@ for await (const req of s) {
         separator: ";",
       });
       
-      const grouped = await groupBy(convertToEntry(content), (item) => item.name);
-      const result = await getBillableHours(grouped);
+      const grouped = groupBy(convertToEntry(content), (item) => item.name);
+      const result = getBillableHours(grouped);
+      console.log (JSON.stringify(result));
 
-      req.respond({
+      await req.respond({
         headers: new Headers({"Content-Type": "application/json; charset=utf-8"}),
         body: JSON.stringify(result)
       })
