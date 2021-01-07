@@ -68,8 +68,6 @@ function getBillableHours(map: Map<string, Entry[]>): BreakUp[] {
     });
 
     const item = new BreakUp(key, totalHours, billableSum);
-
-    item.printInfo();
     summary.push(item);
   }
   return summary;

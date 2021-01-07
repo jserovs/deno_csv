@@ -20,7 +20,7 @@ app.ts is main entry point
 `deno run --allow-read app.ts`
 
 ## Running server
-­`deno run --allow-net server.ts`
+­`deno run --allow-net upload_server.ts`
 
 # Heroku deployment
 
@@ -34,4 +34,6 @@ Add remote to heroku
 
 push to heroku repo
 `git push heroku`
+
+
 

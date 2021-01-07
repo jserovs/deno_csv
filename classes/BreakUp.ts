@@ -12,13 +12,14 @@ class BreakUp {
     this.billableHours = billableHours;
   }
 
-  printInfo() {
-    console.log(
-      this.name + ": billable hours = " + this.billableHours +
-        ", total hours = " +
-        this.totalHours + ", percentage = " +
-        ((this.billableHours / this.totalHours) * 100).toFixed(3),
-    );
+  printInfo(): string {
+    const output = this.name + ": billable hours = " + this.billableHours +
+      ", total hours = " + this.totalHours + ", percentage = " +
+      ((this.billableHours / this.totalHours) * 100).toFixed(3);
+
+    console.log(output);
+
+    return output;
   }
 }
 

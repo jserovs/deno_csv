@@ -8,22 +8,26 @@ import {
 import { BufReader } from "https://deno.land/std@0.82.0/io/bufio.ts";
 
 import { parseCsv } from "./deps.ts";
-import { convertToEntry, getBillableHours, groupBy } from "./services/EntryServices.ts";
+import {
+  convertToEntry,
+  getBillableHours,
+  groupBy,
+} from "./services/EntryServices.ts";
+import { BreakUp } from "./classes/BreakUp.ts";
 
 const { args } = Deno;
 const DEFAULT_PORT = 8083;
 const argPort = parse(args).port;
 
+var output:string;
+
 const server = serve({ port: argPort ? Number(argPort) : DEFAULT_PORT });
 console.log(`🦕 Deno server running 🦕`);
-
-type Reader = Deno.Reader;
 
 for await (const req of server) {
   if (req.url === "/upload") {
     const form = await multiParser(req);
     if (form) {
-      console.log("single");
       // getting file contents from upload
       const f = <FormFile> form.files["csv"];
       // creating reader from file content buffer
@@ -33,15 +37,23 @@ for await (const req of server) {
         skipFirstRow: true,
         separator: ";",
       });
-      
+
       const grouped = groupBy(convertToEntry(content), (item) => item.name);
       const result = getBillableHours(grouped);
-      console.log (JSON.stringify(result));
+
+      output = "";
+
+      for (const entry of result) {
+        output += "<p>"+entry.printInfo()+"</p>";
+      }
 
       await req.respond({
-        headers: new Headers({"Content-Type": "application/json; charset=utf-8"}),
-        body: JSON.stringify(result)
-      })
+        // headers: new Headers({"Content-Type": "application/json; charset=utf-8"}),
+        headers: new Headers({ "Content-Type": "text/html; charset=utf-8" }),
+        // body: JSON.stringify(result, undefined, 2)
+
+        body: output,
+      });
     }
   }
 
