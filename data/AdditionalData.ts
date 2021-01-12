@@ -1,3 +1,5 @@
 const nonBillablePhaseArray: string[] = ["Other training / Self Study"];
 
-export { nonBillablePhaseArray };
+const nonBillableDescriptionArray: string[] = ["NT integrations", "GVI"];
+
+export { nonBillablePhaseArray, nonBillableDescriptionArray };

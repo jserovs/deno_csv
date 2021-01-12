@@ -22,6 +22,8 @@ app.ts is main entry point
 ## Running server
 ­`deno run --allow-net upload_server.ts`
 
+## Watchin server
+
 # Heroku deployment
 
 Buildpack to be set
@@ -34,6 +36,4 @@ Add remote to heroku
 
 push to heroku repo
 `git push heroku`
-
-
 

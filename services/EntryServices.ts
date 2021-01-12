@@ -1,7 +1,7 @@
 import { parseDate } from "../deps.ts";
 import { Entry } from "../classes/Entry.ts";
 import { BreakUp } from "../classes/BreakUp.ts";
-import { nonBillablePhaseArray } from "../data/AdditionalData.ts";
+import { nonBillablePhaseArray, nonBillableDescriptionArray } from "../data/AdditionalData.ts";
 
 function convertToEntry(list: any): Entry[] {
   var entryList: Entry[] = [];
@@ -11,6 +11,7 @@ function convertToEntry(list: any): Entry[] {
   var customer: string;
   var project: string;
   var phase: string;
+  var descriprion: string;
   list.forEach((element: any) => {
     if (typeof element === "object") {
       // const list: string[] = ["Hours", "Date", "Person", "Account","Case", "Phase"];
@@ -21,6 +22,7 @@ function convertToEntry(list: any): Entry[] {
         if (i.includes("Account")) customer = element[i];
         if (i.includes("Case")) project = element[i];
         if (i.includes("Phase")) phase = element[i];
+        if (i.includes("Description")) descriprion = element[i];
       }
       const entry: Entry = {
         name: name,
@@ -29,6 +31,7 @@ function convertToEntry(list: any): Entry[] {
         customer: customer,
         project: project,
         phase: phase,
+        description: descriprion
       };
 
       entryList.push(entry);
@@ -62,7 +65,11 @@ function getBillableHours(map: Map<string, Entry[]>): BreakUp[] {
 
     map.get(key)?.forEach((element) => {
       totalHours += element.hours;
+      // non billable phase
       if (!nonBillablePhaseArray.includes(element.phase)) {
+        billableSum += element.hours;
+      } else if (nonBillablePhaseArray.includes(element.phase) && nonBillableDescriptionArray.some(v => element.description.includes(v))) {
+        console.log(element.description + "added to customer work")
         billableSum += element.hours;
       }
     });

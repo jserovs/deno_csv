@@ -4,7 +4,7 @@ import { convertToEntry, groupBy, getBillableHours } from "./services/EntryServi
 
 
 const content = await parseCsv(
-  await Deno.readTextFile("Report_20210104_2029.csv"),
+  await Deno.readTextFile("20210112_1035.csv"),
   {
     skipFirstRow: true,
     separator: ";",
@@ -12,4 +12,8 @@ const content = await parseCsv(
 );
 
 const grouped = groupBy(convertToEntry(content), (item) => item.name);
-getBillableHours(grouped);
+const result = getBillableHours(grouped);
+
+for (const entry of result) {
+ entry.printInfo();
+}

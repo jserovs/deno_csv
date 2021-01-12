@@ -5,6 +5,7 @@ class Entry {
   customer!: string;
   project!: string;
   phase!: string;
+  description!: string;
 }
 
 export { Entry };
