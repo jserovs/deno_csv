@@ -64,14 +64,17 @@ function getBillableHours(map: Map<string, Entry[]>): BreakUp[] {
     let totalHours = 0;
 
     map.get(key)?.forEach((element) => {
+      
       totalHours += element.hours;
       // non billable phase
       if (!nonBillablePhaseArray.includes(element.phase)) {
         billableSum += element.hours;
-      } else if (nonBillablePhaseArray.includes(element.phase) && nonBillableDescriptionArray.some(v => element.description.includes(v))) {
-        console.log(element.description + "added to customer work")
+      } else if (nonBillablePhaseArray.includes(element.phase) && nonBillableDescriptionArray.some(v => element.description.toLowerCase().includes(v.toLowerCase()))) {
+        console.log(element.description + " added to customer work")
         billableSum += element.hours;
       }
+
+      console.log (key +" "+ element.phase + " " + element.description)
     });
 
     const item = new BreakUp(key, totalHours, billableSum);
