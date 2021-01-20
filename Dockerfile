@@ -7,6 +7,8 @@ WORKDIR /js
 RUN git clone https://github.com/jserovs/deno_csv
 WORKDIR /js/deno_csv
 
+RUN pwd
+
 USER deno
 
 EXPOSE 8083
