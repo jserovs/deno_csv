@@ -29,7 +29,7 @@ app.ts is main entry point
 Buildpack to be set
 `https://github.com/chibat/heroku-buildpack-deno.git`
 
-hisProcfile to be added
+Procfile to be added
 
 Add remote to heroku
 `heroku git:remote -a infinite-fjord-96060`
