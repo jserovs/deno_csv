@@ -13,7 +13,7 @@ class BreakUp {
   }
 
   printInfo(): string {
-    const output = this.name + ": customer work = " + this.billableHours +
+    const output = this.name + ": customer work hours = " + this.billableHours +
       ", total hours = " + this.totalHours + ", percentage = " +
       ((this.billableHours / this.totalHours) * 100).toFixed(3);
 
