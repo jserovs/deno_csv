@@ -5,7 +5,7 @@ import {
   FormFile,
   multiParser,
 } from "https://deno.land/x/multiparser@v2.0.3/mod.ts";
-import { BufReader } from "https://deno.land/std@0.82.0/io/bufio.ts";
+import { BufReader } from "https://deno.land/std/io/bufio.ts";
 
 import { parseCsv } from "./deps.ts";
 import {
