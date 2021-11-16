@@ -70,11 +70,11 @@ function getBillableHours(map: Map<string, Entry[]>): BreakUp[] {
       if (!nonBillablePhaseArray.includes(element.phase)) {
         billableSum += element.hours;
       } else if (nonBillablePhaseArray.includes(element.phase) && nonBillableDescriptionArray.some(v => element.description.toLowerCase().includes(v.toLowerCase()))) {
-        console.log(element.description + " added to customer work")
+        // console.log(element.description + " added to customer work")
         billableSum += element.hours;
       }
 
-      console.log (key +" "+ element.phase + " " + element.description)
+      // console.log (key +" "+ element.phase + " " + element.description)
     });
 
     const item = new BreakUp(key, totalHours, billableSum);

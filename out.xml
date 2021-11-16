@@ -1,0 +1,237 @@
+🦕 Deno server running 🦕
+Dmitrijs Nilovs Implementation (integration tasks) Updates. Finalizing potential solutions and organizing next weeks for more dynamic testing phase.
+Dmitrijs Nilovs Planning (meetings, design, workshops) Meeting (internal): Status recap - Basware P2P, Blackline 
+Dmitrijs Nilovs Implementation (integration tasks) Neste basware investigation work (Taxes and other topics covered via emails)
+Dmitrijs Nilovs Planning (meetings, design, workshops) Meeting (actual - 4.5h , planned - 1h): Basware P2P - Testing status. Additional discussion with Baltic end users about tax setups, supplier (factoring banks, currency codes), voucher number.
+Dmitrijs Nilovs Implementation (integration tasks) Neste basware investigation work (Taxes and other topics covered via emails)
+Dmitrijs Nilovs Team meetings, development discussions, other events Meeting (internal): NT SOA development workshop 1/2
+Dmitrijs Nilovs Planning (meetings, design, workshops) Meeting (customer): Open Fina matters regarding Basware P2P 
+Dmitrijs Nilovs Implementation (integration tasks) Neste basware investigation work (Taxes and other topics covered via emails)
+Dmitrijs Nilovs Internal meetings and KT sessions Meeting (internal): Internal Nokian Tyres B2B services status meeting
+Dmitrijs Nilovs Planning (meetings, design, workshops) Meeting (customer): Open items with Attido
+Dmitrijs Nilovs Meetings Meeting (customer): Monthly status check
+Dmitrijs Nilovs SAFT data and reports Started code modification for suppliers part.
+Dmitrijs Nilovs Team meetings, development discussions, other events Meeting: Post Lunch weekly update
+Dmitrijs Nilovs SAFT data and reports Investigation of suppliers and customers.
+Jevgenijs Serovs Konfiguraatiot KO1 ESJOTO-697; report data model changes
+Jevgenijs Serovs Telia Alpha2 Development 2021 Telia Alpha2 Development 2021: Consultant
+Jevgenijs Serovs Telia Alpha2 Development 2021 Telia Alpha2 Development 2021: Consultant
+Jevgenijs Serovs Telia Alpha2 Development 2021 Telia Alpha2 Development 2021: Consultant
+Jevgenijs Serovs Telia Alpha2 Development 2021 Telia Alpha2 Development 2021: Consultant
+Jevgenijs Serovs Telia Alpha2 Development 2021 Telia Alpha2 Development 2021: Consultant
+Arturs Grigorjevs KO1 ESJOTO-323: technical implementation.
+Arturs Grigorjevs Team meetings, development discussions, other events Espoo JoTo BIP: update latest estimates + overall technical support and assistance in multiple projects 
+Arturs Grigorjevs Team meetings, development discussions, other events Upcoming NT E-env refresh before and after actions discussion.
+Arturs Grigorjevs Neste Financials Support fixed NESNOW-4695: dunning letter issue: technical assistance.
+Arturs Grigorjevs GOMXXEXT GOMXXEXT-198: xxext lookup table update
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-142:  multiple attempts to prevent integration monitoring report email sending when output is empty. 
+Arturs Grigorjevs Offshore BIP & OBIEE 2020/1 SKBI-208: REP549: resolving problem with multiple templates with different locale zones. 
+Arturs Grigorjevs KO1 ESJOTO-323: correct page numbering  separated by tansaction sections
+Arturs Grigorjevs KO1 ESJOTO-323: updated definitions for 8, 12, 13, 15, 16, 18, 19, 20, 30, 35  fields. Technical implementation in DEV2.
+Arturs Grigorjevs Team meetings, development discussions, other events New organisation launch
+Arturs Grigorjevs Definitions and workload estimate PRDE-128: internal call with veikko.laukkanen. Change request from Andrey Khabarov review. Investigating the reason of valid price = YES for PO NVT2100209 
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-142: Integration monitoring report re-scheduling in PS PROD 
+Arturs Grigorjevs Procure to Pay/Procurement ISSUE-10744: PO statuses differ on PR Visibility Report. PS test version deployment into SVN before upcoming environment refresh. 
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-63: technical implementation.
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-128: Tax Registration Number integration change. Deploying current PS TEST version into SVN repo.
+Arturs Grigorjevs Non-billable Preparation Work Internal Call with Ville V. Discussing GIT visua studio problem with new revisions when manifests file are updated. Minor changes in REP554 migration document
+Arturs Grigorjevs KO1 ESJOTOBIP-5: continuing 7.09.2021 work. Technical assistance. Adding correct page numbering in page header with correct page breaking
+Arturs Grigorjevs Definitions and workload estimate PRDE-147:  PO cancellation is not clearly stated in supplier email: Internal call with Pietikäinen Paavo. Researching possibilities for addint PO document status into email subject.
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-142: SFTP server alert needed for PS integrations. Latest version SVN deployment. Report schedule.
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-63: Delivery control report. Technical implementation in DEV2.
+Arturs Grigorjevs Offshore BIP & OBIEE 2020/1 REP549: problem with different language locales and incorrect layouts. Analysis and investigation.
+Arturs Grigorjevs KO1 ESJOTO-323: Receivables Invoice PDF: bar code, check sum and page numbering.
+Arturs Grigorjevs Consulting work ESJOTO-28; checking the change from 20.8/24.8.
+Arturs Grigorjevs Other training / Self Study Overall research work releated to ESJOTO-323 and Nokian Tyres PL tax work.
+Arturs Grigorjevs GOMXXEXT GOMXXEXT-197: technical support
+Arturs Grigorjevs Internal meetings and KT sessions Monthly status check
+Arturs Grigorjevs Non-billable Preparation Work Skanska internal call.  continuing .06.09.2021 work. 
+Arturs Grigorjevs Offshore BIP & OBIEE 2020/1 INC0376781 SKBI-206 changes in DEV2. + REP554, REP532, REP528, REP553 and REP549 migration document preparation.
+Arturs Grigorjevs Consulting work ESJOTO-17: Supplier contacts with expired active date. Meeting call, investigation and analysis
+Arturs Grigorjevs Team meetings, development discussions, other events Post Lunch weekly update
+Arturs Grigorjevs Fusion Cloud – Procurement System PRDE-63: Delivery control report requirement analysis and investigation. 
+Arturs Grigorjevs Order to Cash/Order Management ISSUE-10605: applying minor fixes in "add tare item function". Technical implementation.
+Arturs Grigorjevs Procure to Pay/Procurement PRDE-128: incorrect date format fix.
+Arturs Grigorjevs Skanska Fusion BIP and OBIEE Maintenance AMS 2021 REP554, REP532, REP528, REP553 and REP549 overall status review. Migration document building,
+Ralfs Grzibovskis Konfiguraatiot KO1 ESJOTO-487: Creating data model query, parameters and list of values
+Ralfs Grzibovskis Planning (meetings, design, workshops) Status recap meeting 
+Ralfs Grzibovskis Implementation (integration tasks) NESBAS-23, NESBAS-24: Updating changes to UAT
+Ralfs Grzibovskis Konfiguraatiot KO1 ESJOTO-487: Writing query for data model
+Ralfs Grzibovskis Konfiguraatiot KO1 ESJOTO-487: Creating data model. Starting to write query and getting familiar with the tables
+Ralfs Grzibovskis Team meetings, development discussions, other events NT SOA development workshop 1/2 meeting
+Ralfs Grzibovskis Other training / Self Study Self-study. Finishing login system in Spring Boot.
+Ralfs Grzibovskis Other training / Self Study Self-training. Spring Boot login system with email confirmation, secure endpoints, user roles.
+Ralfs Grzibovskis Team meetings, development discussions, other events Post lunch weekly update meeting
+Ralfs Grzibovskis Other training / Self Study Self training: experimenting with MVC application using Thymeleaf
+Ralfs Grzibovskis Implementation (integration tasks) NESBAS-23: Updated outbound program Accounts interface to send values if "Parent" checkbox unchecked. NESBAS-24: Started to update Respons outbound interface, to send corresponding company's response codes, using security rules, but after a meeting with Petteri, decided to just send response codes that start with necessary company code.
+Ralfs Grzibovskis Planning (meetings, design, workshops) Call with Petteri regarding NESBAS-24
+Aleksandrs Kudrins CR#8 AP invoice PDF binary attachment AP Invoice modification and unit testing
+Aleksandrs Kudrins Services SM-IT02231269: PROD deployment, Sandbox synchronization after clone
+Aleksandrs Kudrins Team meetings, development discussions, other events PIPA check with Veikko and Susanna
+Aleksandrs Kudrins Design NT Basware Integrations Architecture meeting with Jari Lybeck
+Aleksandrs Kudrins Integrations - Drive, Enable Integration solution review, JIRA tickets creation and followup excel activities
+Aleksandrs Kudrins CR#8 AP invoice PDF binary attachment Sample payload preparation and unit testing, communications
+Aleksandrs Kudrins Team meetings, development discussions, other events New organisation launch
+Aleksandrs Kudrins Fusion Cloud – Procurement System ISSUE-10865: Issue investigation, communication
+Aleksandrs Kudrins Fusion Cloud – Procurement System PO and Receipts integrations supporting
+Aleksandrs Kudrins Design Nokian Tyres - Basware - Interface Definition meeting (3)
+Aleksandrs Kudrins Team meetings, development discussions, other events NT SOA development workshop 1/2 - preparation and presentation
+Aleksandrs Kudrins GVI B2BTECH-1016: Deployment activities, communication
+Aleksandrs Kudrins Fusion Cloud – Procurement System ISSUE-10628: Install script preparation, SVN activities, communication
+Aleksandrs Kudrins Design Technical solution preparation
+Aleksandrs Kudrins Integrations - Drive, Enable Internal status meeting: Forcit & Steripolar projects meeting
+Aleksandrs Kudrins Integrations Forcit: internal check on remaining project hours meeting
+Aleksandrs Kudrins GVI B2BTECH-1016: Issue investigation, changes implementation, GitLab, WMAD deployment and testing
+Aleksandrs Kudrins Fusion Cloud – Procurement System ISSUE-10847: Issue investigation, supporting
+Aleksandrs Kudrins Design Nokian Tyres - Basware - Interface Definition meeting (2)
+Aleksandrs Kudrins Fusion Cloud – Procurement System PO Update Java API sr debug meeting
+Aleksandrs Kudrins Fusion Cloud – Procurement System ISSUE-10821: Supporting
+Aleksandrs Kudrins Design Nokian Tyres - Basware: Interface Definition meeting
+Aleksandrs Kudrins Design Oracle EBS - Basware integration definitions 4 meeting
+Aleksandrs Kudrins Integrations Architect Work 2021 B2BTECH-1125: Changes implementation, unit testing and communication
+Dmitrii Lukovnikov Central Europe CUI-248 - investigation CUI-253 - investigation CUI-206 - investigation CUI-259 - investigation CUI-241 - investigation
+Dmitrii Lukovnikov Internal meetings and KT Studying tech.documentation at Confluence
+Dmitrii Lukovnikov Team meetings, development discussions, other events New organisation launch
+Dmitrii Lukovnikov Customer meetings Common activities needed for b2b integrations 
+Dmitrii Lukovnikov Internal meetings and KT NR integratio service
+Dmitrii Lukovnikov Central Europe CUI-194 - investigation, communication with customer
+Dmitrii Lukovnikov Central Europe Studying tech.documentation at Confluence
+Dmitrii Lukovnikov Nordics CUI-229 - investigation, setup CUI-230 - investigation, setup CUI-207 - investigation, setup
+Dmitrii Lukovnikov Internal meetings and KT Internal Nokian Tyres B2B services status meeting
+Dmitrii Lukovnikov Central Europe Studying tech.documentation at Confluence
+Dmitrii Lukovnikov Customer meetings Monthly status check
+Dmitrii Lukovnikov Central Europe CUI-253 - communication with customer, investigation CUI-241 - investigation CUI-193 - communication with customer CUI-194 - investigation, communication with customer  
+Dmitrii Lukovnikov Central Europe Studying tech.documentation at Confluence
+Dmitrii Lukovnikov Administrative work Post Lunch weekly update
+Dmitrii Lukovnikov Central Europe CUI-253 - communication with customer CUI-254 - communication with customer CUI-248 - investigation, communication with customer (check last email) RE: Pricat File - communication with customer, investigation
+Dmitrii Lukovnikov Nordics CUI-207 - investigation
+Dmitrii Lukovnikov Central Europe Studying tech.documentation at Confluence
+Sergejs Pahomovs Consulting work ESJOTO-19; Checking case with XXESP_BLANKET_PO_LINE_LOC_ALL. ESJOTO-19 internal meeting
+Sergejs Pahomovs CR#7: External ID number ONS-21; Development
+Sergejs Pahomovs Integrations - Convert ONS-26; Items to Effecte. Development
+Sergejs Pahomovs Consulting work ESJOTO-19; Checking case with XXESP_BLANKET_PO_LINE_LOC_ALL
+Sergejs Pahomovs CR#7: External ID number ONS-21; Meeting. New estimate.
+Sergejs Pahomovs Team management New organization launch meeting
+Sergejs Pahomovs Integrations - Convert ONS-26; Items to Effecte. Development
+Sergejs Pahomovs Consulting work ESJOTO-28;Meeting related to  the new changes related to the segments. SVN update.
+Sergejs Pahomovs Forcit NS implementation Internal status meeting: Forcit & Steripolar projects
+Sergejs Pahomovs Other training / Self Study Other training / Self Study: Training Non-Billable ET
+Sergejs Pahomovs Integrations - Convert ONS-26; Items to Efecte integration meeting
+Sergejs Pahomovs Consulting work ESJOTO-28; checking the change from 20.8/24.8. Implementing the new changes related to the segments.
+Sergejs Pahomovs Other training / Self Study Other training / Self Study: Training Non-Billable ET
+Sergejs Pahomovs Meetings Monthly status check
+Sergejs Pahomovs Team meetings, development discussions, other events Post Lunch weekly update
+Sergejs Pahomovs Other training / Self Study Other training / Self Study: Training Non-Billable ET
+Sergejs Pahomovs Integrations - Convert ONS-26; Items to Efecte integration
+Andrejs Semencuks RMA open orders EBS-1335; setups
+Andrejs Semencuks RMA receipts EBS-1335; setups
+Andrejs Semencuks SO and shipments EBS-1335; setups
+Andrejs Semencuks SO pick/update and ship confirmations EBS-1335; setups
+Andrejs Semencuks Subinventory transfers INV EBS-1335; setups
+Andrejs Semencuks Error alerts EBS-1335; setups
+Andrejs Semencuks Stock balance reports EBS-1335; setups
+Andrejs Semencuks Setup eBS EBS-1335; setups
+Andrejs Semencuks Team meetings, development discussions, other events New organization launch
+Andrejs Semencuks Customer meetings Common activities needed for b2b integrations
+Andrejs Semencuks Setup eBS ITCR-18; task list
+Andrejs Semencuks Advanced shipping notice GOM EBS-1335; setups
+Andrejs Semencuks Misc transactions IN (including factory receiving) EBS-1335; setups
+Andrejs Semencuks Cycle count INV EBS-1335; setups
+Andrejs Semencuks PO outbound EBS-1335; setups
+Andrejs Semencuks PO receipts EBS-1335; setups
+Andrejs Semencuks Internal meetings and KT Internal Nokian Tyres B2B services status meeting
+Andrejs Semencuks Internal meetings and KT NT SOA development workshop 1/2
+Andrejs Semencuks Central Europe CUI-160; required change investigation
+Andrejs Semencuks Setup eBS ITCR-18; task list
+Andrejs Semencuks Nordics CUI-252; GVI and UC4 setups
+Andrejs Semencuks Central Europe B2BTECH-1240; required change investigation 
+Andrejs Semencuks Meetings Monthly status check
+Andrejs Semencuks GOMXXEXT GOMXXEXT-173; deployment 
+Andrejs Semencuks Team meetings, development discussions, other events Post Lunch weekly update
+Andrejs Semencuks Customer meetings Changes needed for Delticom PRICAT
+Andrejs Semencuks Central Europe CUI-248; setups
+Andrejs Semencuks Nordics CUI-252; GVI and UC4 setups
+Ashish Sharma Services SM-IT02246023 (9845 rejected pmnt 280379,51 NOK from file 00000801) SM-IT02249887 (9845 validation failed 07.09 17.375 NOK)
+Ashish Sharma Training course Suite foundation
+Ashish Sharma NetSuite study NetSuite study: Training Non-Billable ET
+Ashish Sharma Riga Team payment processing RnD
+Ashish Sharma CR#7: External ID number ONS-21
+Ashish Sharma Team meetings, development discussions, other events New organization launch
+Ashish Sharma Training course Suitefoundation
+Ashish Sharma NetSuite study NetSuite study: Training Non-Billable ET
+Ashish Sharma Riga Team ONS -21 call and implementation 
+Ashish Sharma Services IT02249025 : SANDBOX - invoice 2502136X, BDO can't initiate the payment IT02246023 (9845 rejected pmnt 280379,51 NOK from file 00000801)  
+Ashish Sharma Services SB testing with BDO india on call.  Payment reversing date issue - PROD
+Ashish Sharma NetSuite study NetSuite study: Training Non-Billable ET
+Ashish Sharma Riga Team Forcit / Steripolar project status meeting
+Ashish Sharma Riga Team Fortum payment status
+Ashish Sharma Services IT02249025 : SANDBOX - invoice 2502136X, BDO can't initiate the payment IT02247830 : 9847 file sending failed 212,684.14 NOK IT02246023 : 9845 rejected pmnt 280379,51 NOK from file 00000801
+Ashish Sharma Services JE testing for payment voiding
+Ashish Sharma NetSuite study NetSuite study: Training Non-Billable ET
+Ashish Sharma Riga Team Salamon NS tax testing
+Ashish Sharma Riga Team tax code testing for salomen Fortum JE voiding date issue
+Ashish Sharma Services IT02247470 : RE: Incomplete - GSTR2 Data of all Indian Entities IT02246023 : 9845 rejected pmnt 280379,51 NOK from file 00000801  GSTR2 Data of all Indian Entities - (Fortum - IT02222139)
+Ashish Sharma Team meetings, development discussions, other events Post lunch weekly meeting
+Ashish Sharma Training course Suite foundation study
+Ashish Sharma NetSuite study NetSuite study: Training Non-Billable ET
+Ashish Sharma Riga Team Payment testing.  Stucked invoiced with BDO / Inspirria
+Arturs Skrulis Konfiguraatiot KO1 ESJOTO-488; Fixing errors
+Arturs Skrulis Team meetings, development discussions, other events Espoo JoTo BIP: update latest estimates
+Arturs Skrulis Other training / Self Study self-training
+Arturs Skrulis GVI B2BTECH-1225; GVI conversion for Germany project
+Arturs Skrulis Team meetings, development discussions, other events New organisation launch
+Arturs Skrulis GVI B2BTECH-1225;  GVI conversion for Germany project
+Arturs Skrulis Team meetings, development discussions, other events NT SOA development workshop 1/2
+Arturs Skrulis GOMXXEXT GOMXXEXT-197; Customer price to be pushed for 90078492
+Arturs Skrulis Other training / Self Study self-training
+Arturs Skrulis Internal meetings and KT sessions Monthly status check
+Arturs Skrulis GVI B2BTECH-1225; GVI conversion for Germany project 
+Arturs Skrulis Fusion Cloud – Procurement System ISSUE-10501; Investigation of deployment issue
+Arturs Skrulis Konfiguraatiot KO1 ESJOTO-697; params error investigation
+Arturs Skrulis Team meetings, development discussions, other events Post Lunch weekly update
+Arturs Skrulis Other training / Self Study self-training
+Arturs Skrulis GVI B2BTECH-1225; GVI conversion for Germany project - Investigation -Estimation
+Sigita Stone Konfiguraatiot KO1 Espoo JoTo BIP: update latest estimates. Teams meeting.
+Sigita Stone Konfiguraatiot KO1 Report specification, training.
+Sigita Stone Planning (meetings, design, workshops) Status recap - Basware P2P, Blackline. Teams meeting.
+Sigita Stone Implementation (intagration tasks) Blackline reversals. Google meets.
+Sigita Stone Implementation (intagration tasks) Updating package to send response. Read file error. 
+Sigita Stone eBS incidents and service requests 2021 NESNOW-4941. Investigating error. 
+Sigita Stone Konfiguraatiot KO1  ESJOTO-506. Updating report. 
+Sigita Stone Konfiguraatiot KO1  ESJOTO-610. Creating report. 
+Sigita Stone Team meetings, development discussions, other events New organisation launch. Teams meeting.
+Sigita Stone Other training / Self Study Ticket, Documents, other study.
+Sigita Stone Konfiguraatiot KO1 Report specification, training. 
+Sigita Stone Konfiguraatiot KO1 ESJOTO-455. Updating report. 
+Sigita Stone Training course NT SOA development workshop 1/2. Teams meeting.
+Sigita Stone Other training / Self Study Ticket, Documents, other study.
+Sigita Stone Konfiguraatiot KO1 ESJOTO-610. Started working on report. 
+Sigita Stone Konfiguraatiot KO1 Checking if reports match in all environments. 
+Sigita Stone Team meetings, development discussions, other events Monthly status check. Teams meeting.
+Sigita Stone Other training / Self Study Ticket, Documents, other study.
+Sigita Stone Konfiguraatiot KO1 ESJOTO-506 . Layout update, integer error.
+Sigita Stone Konfiguraatiot KO1 Miscellaneous tasks. 
+Sigita Stone Team meetings, development discussions, other events Post Lunch weekly update. Teams meeting.
+Sigita Stone Neste Blackline SoFAPS Master data export. Miscellaneous tickets. 
+BreakUp { name: [32m"Dmitrijs Nilovs"[39m, totalHours: [33m44[39m, billableHours: [33m44[39m }
+Dmitrijs Nilovs: customer work hours = 44, total hours = 44, percentage = 100.000
+BreakUp { name: [32m"Jevgenijs Serovs"[39m, totalHours: [33m48[39m, billableHours: [33m48[39m }
+Jevgenijs Serovs: customer work hours = 48, total hours = 48, percentage = 100.000
+BreakUp { name: [32m"Arturs Grigorjevs"[39m, totalHours: [33m40[39m, billableHours: [33m38.5[39m }
+Arturs Grigorjevs: customer work hours = 38.5, total hours = 40, percentage = 96.250
+BreakUp { name: [32m"Ralfs Grzibovskis"[39m, totalHours: [33m40[39m, billableHours: [33m25.5[39m }
+Ralfs Grzibovskis: customer work hours = 25.5, total hours = 40, percentage = 63.750
+BreakUp { name: [32m"Aleksandrs Kudrins"[39m, totalHours: [33m40[39m, billableHours: [33m40[39m }
+Aleksandrs Kudrins: customer work hours = 40, total hours = 40, percentage = 100.000
+BreakUp { name: [32m"Dmitrii Lukovnikov"[39m, totalHours: [33m40[39m, billableHours: [33m40[39m }
+Dmitrii Lukovnikov: customer work hours = 40, total hours = 40, percentage = 100.000
+BreakUp { name: [32m"Sergejs Pahomovs"[39m, totalHours: [33m40[39m, billableHours: [33m31.5[39m }
+Sergejs Pahomovs: customer work hours = 31.5, total hours = 40, percentage = 78.750
+BreakUp { name: [32m"Andrejs Semencuks"[39m, totalHours: [33m40[39m, billableHours: [33m40[39m }
+Andrejs Semencuks: customer work hours = 40, total hours = 40, percentage = 100.000
+BreakUp { name: [32m"Ashish Sharma"[39m, totalHours: [33m40[39m, billableHours: [33m22.5[39m }
+Ashish Sharma: customer work hours = 22.5, total hours = 40, percentage = 56.250
+BreakUp { name: [32m"Arturs Skrulis"[39m, totalHours: [33m40[39m, billableHours: [33m36.5[39m }
+Arturs Skrulis: customer work hours = 36.5, total hours = 40, percentage = 91.250
+BreakUp { name: [32m"Sigita Stone"[39m, totalHours: [33m40[39m, billableHours: [33m32.5[39m }
+Sigita Stone: customer work hours = 32.5, total hours = 40, percentage = 81.250

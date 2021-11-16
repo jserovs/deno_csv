@@ -25,9 +25,17 @@ const server = serve({ port: argPort ? Number(argPort) : DEFAULT_PORT });
 console.log(`🦕 Deno server running 🦕`);
 
 for await (const req of server) {
+
+
   if (req.url === "/upload") {
+
+    console.log (req.headers);
+    console.log(req.headers.get("content-type"));
     const form = await multiParser(req);
+    console.log ("multiparser")
+    console.log (form);
     if (form) {
+      console.log ("form")
       // getting file contents from upload
       const f = <FormFile> form.files["csv"];
       // creating reader from file content buffer
@@ -38,12 +46,17 @@ for await (const req of server) {
         separator: ";",
       });
 
+      console.log (content);
+
       const grouped = groupBy(convertToEntry(content), (item) => item.name);
+
+      // console.log (grouped);
       const result = getBillableHours(grouped);
 
       output = "";
 
       for (const entry of result) {
+        // console.log (entry);
         output += "<p>"+entry.printInfo()+"</p>";
       }
 

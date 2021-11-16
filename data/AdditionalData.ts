@@ -1,4 +1,6 @@
-const nonBillablePhaseArray: string[] = ["Other training / Self Study", "Training course", "NetSuite study"];
+const nonBillablePhaseArray: string[] = ["Other training / Self Study", "Training course", "NetSuite study", "ATTECH Team"];
+
+const selfStudyCase: string[] = ["Self-study"];
 
 const nonBillableDescriptionArray: string[] = ["NT integrations", "GVI"];
 

@@ -17,7 +17,7 @@ class BreakUp {
       ", total hours = " + this.totalHours + ", percentage = " +
       ((this.billableHours / this.totalHours) * 100).toFixed(3);
 
-    console.log(output);
+    // console.log(output);
 
     return output;
   }
